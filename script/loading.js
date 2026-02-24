@@ -1,0 +1,1 @@
+loadText = document.querySelector('loading )
