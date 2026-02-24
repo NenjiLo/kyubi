@@ -13,10 +13,16 @@ body {
 
 .loading-text{
     font-size: 50px;
+    opacity: 1;
 }
 
 .bg {
     width: 100vw;
     height: 100vh;
-    background-image: url()
+    background-image: url('../images/Fireplace.avif');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(100px);
 }
