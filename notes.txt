@@ -1,3 +1,6 @@
 git add .
 git commit -m "search"
 git push
+
+    <a href="loading.html">This is my loading page.</a>
+    <a href="search.html">This is my search page.</a>
