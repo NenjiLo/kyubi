@@ -19,4 +19,5 @@ function sizing() {
     }
     box.style.width = `${size}px`
     box.style.height = `${size}px'
+
 }
