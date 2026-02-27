@@ -6,6 +6,7 @@ direction = "bigger"
 int set Interval(sizing, 30)
 
 function sizing() {
+    
     if size = 200 {
         direction = "smaller"
     }
