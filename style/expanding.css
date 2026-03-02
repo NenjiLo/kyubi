@@ -27,4 +27,23 @@ body{
     flex: 1;
     margin: 10px;
     position: relative;
+    transition: flex 1s ease-in;
+}
+
+h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    margin: 0px;
+    opacity: 0;
+    transition: opacity 1s ease-in 0.5s;
+}
+
+.panel.active {
+    flex: 10;
+}
+
+.panel.active h3 {
+    opacity: 1;
 }
