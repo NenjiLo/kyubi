@@ -46,5 +46,13 @@ hoverBox.addEventListener('mouseleave', () => {
 })
 
 dblclickBox.addEventListener("dblclick", () => {
-    
+
+dblclick[0].classList.add('active')
+
+for (let i = 0; i < 5; i = i + 1){
+    dblclick[i].addEventListener('click', () => {
+        removeActiveFromdblclick()
+        dblclick[i].classList.add('active')
+    })
+}
 })
