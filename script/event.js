@@ -46,13 +46,9 @@ hoverBox.addEventListener('mouseleave', () => {
 })
 
 dblclickBox.addEventListener("dblclick", () => {
+    dblclickBox.style.transform = "scale(1.5)"
 
-dblclick[0].classList.add('active')
-
-for (let i = 0; i < 5; i = i + 1){
-    dblclick[i].addEventListener('click', () => {
-        removeActiveFromdblclick()
-        dblclick[i].classList.add('active')
-    })
-}
+    setTimeout(() => {
+        dblclickBox.style.transform = "scale(1)"
+    }, 300)
 })
