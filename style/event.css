@@ -44,11 +44,15 @@ body {
 .hover {
     position: absolute;
     top: 20px;
-    right: 20px; 
+    right: 20px;
 }
 
 .start {
     animation: spin 1s linear infinite;
+}
+
+.dblclick.active {
+    flex: 10;
 }
 
 @keyframes spin {
