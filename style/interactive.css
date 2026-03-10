@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.rectangle {
+    height: 60px;
+    width: 150px;
+    background: red;
+    margin: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rock {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.paper {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+.scissors {
+    position: absolute;
+    top: 20px;
+    left: 380px;
+}
+
+.result {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    width: 500px;
+    background: orange;
+    color: white;
+    text-align: center;
+}
