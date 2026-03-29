@@ -1,18 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 * {
     box-sizing: border-box;
 }
 
+
 body {
-    font-family: "Press Start 2P", system-ui;
-    background: #4B2687;
-    color: #ffffff;
+    font-family: "Iosevka Charon Mono", monospace;
+    background: #777777;
+    color: white;
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0;
     text-align: center;
 }
+
 
 .screen {
     height: 100vh;
@@ -21,60 +24,48 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: margin 1s ease-out;
 }
 
+
 .screen.up {
-    margin-top: -100vh
+    margin-top: -100vh;
 }
+
 
 h1 {
     line-height: 1.4;
 }
 
+
 .btn {
+    font-family: "Iosevka Charon Mono", monospace;
     border: 0;
-    background: #ffffff;
-    color: #4B2687;
+    background: white;
+    color: #777777;
     padding: 15px 20px;
     cursor: pointer;
-    font-family: "Press Start 2P", system-ui;
 }
+
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: .9;
 }
 
-.insects-list {
+
+.insect-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    padding: 0px;
+    padding : 0px;
 }
 
-.insects-list li {
+
+.insect-list li {
     margin: 10px;
 }
 
-.choose-insect-btn {
-    background: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    font-family: "Press Start 2P", system-ui;
-    width: 150px;
-    height: 150px;
-}
-
-.choose-insect-btn:hover {
-    background: #ffffff;
-    color: #4B2687;
-}
-
-.choose-insect-btn:active {
-    background: #ffffff;
-    opacity: 0.7;
-}
 
 .choose-insect-btn img {
     width: 100px;
@@ -82,9 +73,34 @@ h1 {
     object-fit: contain;
 }
 
+
+.choose-insect-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: "Iosevka Charon Mono", monospace;
+    width: 150px;
+    height: 150px;
+}
+
+
+.choose-insect-btn:hover {
+    background: white;
+    color: #777777;
+}
+
+
+.choose-insect-btn:active{
+    background: white;
+    opacity: .7;
+}
+
+
 .game-container {
     position: relative;
 }
+
 
 .time {
     position: absolute;
@@ -92,20 +108,47 @@ h1 {
     left: 20px;
 }
 
+
 .score {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
+
 .message {
     line-height: 1.7;
-    background: #000000;
+    background: black;
     width: 100%;
     padding: 20px;
     z-index: 100;
     text-align: center;
     opacity: 0;
+    transform: scale(0)
+}
+.message.visible {
+    opacity: 1;
+    transform: scale(1)
 }
 
 
+.insect {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+
+.insect.caught {
+    transform: scale(0);
+}
+
+
+.insect img {
+    width: 100px;
+    height: 100px;
+}
