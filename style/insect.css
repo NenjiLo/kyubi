@@ -1,154 +1,160 @@
-@import url('https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-
+/* RESET */
 * {
     box-sizing: border-box;
 }
 
-
+/* BODY */
 body {
-    font-family: "Iosevka Charon Mono", monospace;
-    background: #777777;
-    color: white;
+    background-color: #5160FF;
+    color: #fff;
+    font-family: 'Press Start 2P', system-ui;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin: 0;
     text-align: center;
 }
 
-
+/* SCREEN LAYOUT */
 .screen {
-    height: 100vh;
-    width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    transition: margin 1s ease-out;
+    height: 100vh;
+    width: 100%;
 }
 
-
+/* MOVE SCREENS UP/DOWN */
 .screen.up {
     margin-top: -100vh;
 }
 
+/* BUTTON */
+.btn {
+    border: 0;
+    background-color: #fff;
+    color: #5160FF;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-family: inherit;
+}
 
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* H1 */
 h1 {
     line-height: 1.4;
 }
 
-
-.btn {
-    font-family: "Iosevka Charon Mono", monospace;
-    border: 0;
-    background: white;
-    color: #777777;
-    padding: 15px 20px;
-    cursor: pointer;
+/* LINKS */
+a {
+    color: #fff;
 }
 
-
-.btn:hover {
-    opacity: .9;
-}
-
-
-.insect-list {
+/* INSECT LIST */
+.insects-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
-    padding : 0px;
+    padding: 0;
 }
 
-
-.insect-list li {
+/* LIST ITEMS */
+.insects-list li {
     margin: 10px;
 }
 
-
-.choose-insect-btn img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-
+/* INSECT BUTTONS */
 .choose-insect-btn {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
     cursor: pointer;
-    font-family: "Iosevka Charon Mono", monospace;
+    font-family: inherit;
     width: 150px;
     height: 150px;
 }
 
-
 .choose-insect-btn:hover {
-    background: white;
-    color: #777777;
+    background-color: #fff;
+    color: #5160FF;
 }
 
-
-.choose-insect-btn:active{
-    background: white;
-    opacity: .7;
+.choose-insect-btn:active {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
-
+/* GAME CONTAINER */
 .game-container {
     position: relative;
 }
 
-
+/* TIME */
 .time {
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
-
+/* SCORE */
 .score {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-
+/* MESSAGE */
 .message {
-    line-height: 1.7;
-    background: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+    line-height: 1.7;
     z-index: 100;
     text-align: center;
-    opacity: 0;
-    transform: scale(0)
 }
+
+/* MESSAGE VISIBLE */
 .message.visible {
+    transform: translate(-50%, 150%);
     opacity: 1;
-    transform: scale(1)
+    transition: transform 0.4s ease-in;
 }
 
-
+/* INSECT CONTAINER */
 .insect {
-    width: 100px;
-    height: 100px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100px;
+    height: 100px;
     position: absolute;
 }
 
-
-.insect.caught {
-    transform: scale(0);
-}
-
-
+/* INSECT IMAGE */
 .insect img {
     width: 100px;
     height: 100px;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* WHEN CLICKED */
+.insect.caught {
+    transform: scale(0);
+    transition: transform 0.3s ease-out;
+}
+
+.choose-insect-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
