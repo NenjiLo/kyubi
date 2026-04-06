@@ -3,18 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>My Web Projects Hub</title>
+
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    This is my homepage.
-    <a href="loading.html">This is my loading page.</a>
-    <a href="search.html">This is my search page.</a>
-    <a href="practice.html">Practice!!!</a>
-    <a href="expanding.html">Expanding</a>
-    <a href="event.html">Event</a>
-    <a href="interactive.html">Interactive Web Page</a>
-    <a href="sound.html">Sound</a>
-    <a href="insect.html">Insect Game</a>
-    <a href="navigation.html">navigation</a>
+
+    <!-- NAV -->
+    <nav class="navbar">
+        <h1 class="logo">My Projects</h1>
+        <button id="toggle-dark">Toggle Dark Mode</button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h2>Welcome to My Homepage</h2>
+        <p>Click a project below to explore.</p>
+    </header>
+
+    <!-- LINKS TO PAGES -->
+    <section class="projects">
+
+        <a href="event.html" class="card">Event Page</a>
+        <a href="expanding.html" class="card">Expanding Cards</a>
+        <a href="insect.html" class="card">Catch The Insect</a>
+        <a href="loading.html" class="card">Loading Page</a>
+        <a href="navigation.html" class="card">Navigation Page</a>
+        <a href="search.html" class="card">Search Page</a>
+        <a href="sound.html" class="card">Sound Board</a>
+
+    </section>
+
+    <script src="script/index.js"></script>
 </body>
 </html>
