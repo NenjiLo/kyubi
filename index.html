@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Projects Hub</title>
+    <title>Homepage</title>
 
     <link rel="stylesheet" href="style/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- NAV -->
-    <nav class="navbar">
-        <h1 class="logo">My Projects</h1>
-        <button id="toggle-dark">Toggle Dark Mode</button>
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="container">
+            <h1 class="logo">
+                <a href="index.html">My Website</a>
+            </h1>
+
+            <button id="toggle-dark">Toggle Dark Mode</button>
+        </div>
     </nav>
+    <div class="hero">
+        <div class="container">
+            <h1>Project Homepage</h1>
+            <p>Select a page to explore</p>
+        </div>
+    </div>
 
-    <!-- HERO -->
-    <header class="hero">
-        <h2>Welcome to My Homepage</h2>
-        <p>Click a project below to explore.</p>
-    </header>
-
-    <!-- LINKS TO PAGES -->
-    <section class="projects">
-
-        <a href="event.html" class="card">Event Page</a>
-        <a href="expanding.html" class="card">Expanding Cards</a>
-        <a href="insect.html" class="card">Catch The Insect</a>
-        <a href="loading.html" class="card">Loading Page</a>
-        <a href="navigation.html" class="card">Navigation Page</a>
-        <a href="search.html" class="card">Search Page</a>
-        <a href="sound.html" class="card">Sound Board</a>
-
+    <section class="container content">
+        <ul class="links">
+            <li><a href="event.html">Event Page</a></li>
+            <li><a href="expanding.html">Expanding Cards</a></li>
+            <li><a href="insect.html">Catch The Insect</a></li>
+            <li><a href="loading.html">Loading Page</a></li>
+            <li><a href="nav.html">Navigation Page</a></li>
+            <li><a href="search.html">Search Page</a></li>
+            <li><a href="sound.html">Sound Board</a></li>
+        </ul>
     </section>
-
     <script src="script/index.js"></script>
+
 </body>
 </html>
