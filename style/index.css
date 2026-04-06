@@ -9,8 +9,10 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* NAVBAR */
 .nav {
     background-color: #5160FF;
     color: #fff;
@@ -23,8 +25,10 @@ body {
     padding: 0 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
+/* LOGO */
 .logo a {
     color: #fff;
     text-decoration: none;
@@ -32,6 +36,30 @@ body {
     font-size: 20px;
 }
 
+/* NAV BUTTON */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #fff;
+    color: #5160FF;
+}
+
+/* HERO */
 .hero {
     background-color: #5160FF;
     color: #fff;
@@ -39,12 +67,14 @@ body {
     text-align: center;
 }
 
+/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
+/* LINKS SECTION */
 .content {
     text-align: center;
 }
@@ -72,6 +102,7 @@ body {
     transform: scale(1.05);
 }
 
+/* DARK MODE */
 .dark {
     background-color: #222;
     color: #fff;
@@ -91,4 +122,13 @@ body {
 
 .dark .links a:hover {
     color: #5160FF;
+}
+
+.dark .nav-btn {
+    border-color: #fff;
+}
+
+.dark .nav-btn:hover {
+    background-color: #fff;
+    color: #111;
 }
