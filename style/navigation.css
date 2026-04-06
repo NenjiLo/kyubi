@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,9 +8,7 @@
 
 
 body {
-    background: rgb(100, 100, 100);
-    font-family: "Iosevka Charon Mono", monospace;
-    color: #222222;
-    overflow-x: hidden;
+    color: #222;
     padding-bottom: 50px;
+    font-family: "Open Sans", sans-serif;
 }
