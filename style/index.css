@@ -12,7 +12,6 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* NAVBAR */
 .nav {
     background-color: #5160FF;
     color: #fff;
@@ -28,7 +27,6 @@ body {
     justify-content: space-between;
 }
 
-/* LOGO */
 .logo a {
     color: #fff;
     text-decoration: none;
@@ -36,7 +34,6 @@ body {
     font-size: 20px;
 }
 
-/* NAV BUTTON */
 .nav-links {
     list-style: none;
     margin: 0;
@@ -59,7 +56,6 @@ body {
     color: #5160FF;
 }
 
-/* HERO */
 .hero {
     background-color: #5160FF;
     color: #fff;
@@ -67,14 +63,12 @@ body {
     text-align: center;
 }
 
-/* CONTAINER */
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
 }
 
-/* LINKS SECTION */
 .content {
     text-align: center;
 }
@@ -102,7 +96,6 @@ body {
     transform: scale(1.05);
 }
 
-/* DARK MODE */
 .dark {
     background-color: #222;
     color: #fff;
