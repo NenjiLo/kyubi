@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* RESET */
 * {
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     background-color: #5160FF;
     color: #fff;
@@ -16,7 +14,6 @@ body {
     text-align: center;
 }
 
-/* SCREEN LAYOUT */
 .screen {
     display: flex;
     flex-direction: column;
@@ -26,12 +23,10 @@ body {
     width: 100%;
 }
 
-/* MOVE SCREENS UP/DOWN */
 .screen.up {
     margin-top: -100vh;
 }
 
-/* BUTTON */
 .btn {
     border: 0;
     background-color: #fff;
@@ -45,17 +40,14 @@ body {
     opacity: 0.9;
 }
 
-/* H1 */
 h1 {
     line-height: 1.4;
 }
 
-/* LINKS */
 a {
     color: #fff;
 }
 
-/* INSECT LIST */
 .insects-list {
     display: flex;
     flex-wrap: wrap;
@@ -64,12 +56,11 @@ a {
     padding: 0;
 }
 
-/* LIST ITEMS */
+
 .insects-list li {
     margin: 10px;
 }
 
-/* INSECT BUTTONS */
 .choose-insect-btn {
     background-color: transparent;
     border: 2px solid #fff;
@@ -89,26 +80,26 @@ a {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* GAME CONTAINER */
+
 .game-container {
     position: relative;
 }
 
-/* TIME */
+
 .time {
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
-/* SCORE */
+
 .score {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-/* MESSAGE */
+
 .message {
     position: absolute;
     top: 0;
@@ -122,14 +113,12 @@ a {
     text-align: center;
 }
 
-/* MESSAGE VISIBLE */
 .message.visible {
     transform: translate(-50%, 150%);
     opacity: 1;
     transition: transform 0.4s ease-in;
 }
 
-/* INSECT CONTAINER */
 .insect {
     cursor: pointer;
     display: flex;
@@ -140,14 +129,12 @@ a {
     position: absolute;
 }
 
-/* INSECT IMAGE */
 .insect img {
     width: 100px;
     height: 100px;
     transform: translate(-50%, -50%) scale(1);
 }
 
-/* WHEN CLICKED */
 .insect.caught {
     transform: scale(0);
     transition: transform 0.3s ease-out;
@@ -158,3 +145,56 @@ a {
     height: 100%;
     object-fit: contain;
 }
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 15px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+    color: #c0392b;
+    font-weight: bold;
+}
+
