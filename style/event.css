@@ -64,19 +64,26 @@ body {
     }
 }
 
-.home-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background-color: #516FF;
-    color: #fff;
-    padding: 8px 14px;
-    text-decoration: none;
-    font-family: inherit;
-    border-radius: 5px;
-    transition: 0.3s;
+.nav-links {
+    list-style: none;
 }
 
-.home-btn:hover {
-    background-color: #000;
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
 }
+
+nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    
+    right: 20;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
