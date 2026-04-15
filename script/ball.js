@@ -12,6 +12,8 @@ let ballYDirection = 1;
 
 let lPaddleWidth = 10;
 let lPaddleHeight = 100;
+
+
 let lPaddleSpeed = 20;
 let lPaddleXPosition = 20;
 let lPaddleYPosition = windowHeight / 2 - lPaddleHeight / 2;
